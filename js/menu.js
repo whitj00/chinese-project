@@ -1,5 +1,6 @@
 var Menu = (function() {
 	
+	swal({   title: "Specials!",   text: "Today we have some special dishes! <br><br>蒙古烤牛肉(Mongolian Roasted Beef) <br>四川酸辣豆腐 (Sichuan Hot and Spicy Tofu) <br>成都古老猪肉 (Chengdu Sweet and Sour Pork) <br>鸡排饭 (Deep Fried Chicken with Rice) <br>凉拌酸辣黄瓜 (Sweet and Sour Cucumber Salad)",   html: true, type: "info",   confirmButtonText: "Thanks!" });
 	var $container = $( '#rm-container' ),						
 		$cover = $container.find( 'div.rm-cover' ),
 		$middle = $container.find( 'div.rm-middle' ),
