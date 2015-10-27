@@ -51,11 +51,10 @@ var Menu = (function() {
 		viewDetails = function( recipe ) {
 
 			var title = recipe.text(),
-				img = recipe.data( 'thumb' ),
 				description = recipe.parent().next().text(),
 				url = recipe.attr( 'href' );
 
-			var $modal = $( '<div class="rm-modal"><div class="rm-thumb" style="background-image: url(' + img + ')"></div><h5>' + title + '</h5><p>' + description + '</p><span class="rm-close-modal">x</span></div>' );
+			var $modal = $( '<div class="rm-modal"><h5>' + title + '</h5><p>' + description + '</p><span class="rm-close-modal">x</span></div>' );
 
 			$modal.appendTo( $container );
 
